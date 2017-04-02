@@ -1,0 +1,6 @@
+name = "resque-delay-perl"
+# badges = ["travis"]
+authority="cpan:MERU"
+
+module_maker="ModuleBuildTiny"
+
