@@ -5,27 +5,10 @@ use warnings;
 
 our $VERSION = "0.01";
 
-use Mouse::Role;
-use Time::Moment;
-use Time::Strptime qw/strptime/;
+use Resque::Plugin;
 
-around pop => sub {
-    my ( $self, $queue ) = @_;
-    my $payload = $self->redis->lpop($self->key( queue => $queue ));
-    return unless $payload;
+add_to resque => 'Delay::Pop';
 
-    if (defined $payload->[0]->{delay_at}) {
-        my ($epoch,) = strptime($payload->[0]->{delay_at});
-        return if Time::Moment->from_epoch($epoch) < Time::Moment->now;
-    }
-
-    $self->new_job({
-        payload => $payload,
-        queue   => $queue
-    });
-};
-
-no Mouse;
 1;
 __END__
 

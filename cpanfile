@@ -1,5 +1,6 @@
 requires 'perl', '5.008001';
-requires 'Mouse';
+requires 'Moose';
+requires 'Resque';
 requires 'Time::Moment';
 requires 'Time::Strptime';
 
