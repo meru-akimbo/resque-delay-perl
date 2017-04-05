@@ -4,7 +4,7 @@
       "meru_akimbo <merukatoruayu0@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520",
+   "generated_by" : "Minilla/v3.0.2, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "resque-delay-perl",
+   "name" : "Resque-Plugin-Delay",
    "no_index" : {
       "directory" : [
          "t",
@@ -42,16 +42,37 @@
       },
       "runtime" : {
          "requires" : {
+            "JSON::XS" : "0",
+            "Moose" : "0",
+            "Resque" : "0",
+            "Time::Moment" : "0",
+            "Time::Strptime" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Redis" : "0",
+            "Scope::Guard" : "0",
+            "Test::MockTime" : "0",
+            "Test::More" : "0.98",
+            "Test::RedisServer" : "0"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/meru-akimbo/resque-delay-perl/issues"
+      },
+      "homepage" : "https://github.com/meru-akimbo/resque-delay-perl",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/meru-akimbo/resque-delay-perl.git",
+         "web" : "https://github.com/meru-akimbo/resque-delay-perl"
+      }
+   },
    "version" : "0.01",
-   "x_authority" : "cpan:MERU"
+   "x_authority" : "cpan:MERU",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }
