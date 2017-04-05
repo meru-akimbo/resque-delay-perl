@@ -7,7 +7,7 @@ our $VERSION = "0.01";
 
 use Resque::Plugin;
 
-add_to resque => 'Delay::Pop';
+add_to resque => 'Delay::Dequeue';
 
 1;
 __END__

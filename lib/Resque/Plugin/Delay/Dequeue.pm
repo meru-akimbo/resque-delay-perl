@@ -1,4 +1,4 @@
-package Resque::Plugin::Delay::Pop;
+package Resque::Plugin::Delay::Dequeue;
 use 5.008001;
 use strict;
 use warnings;
