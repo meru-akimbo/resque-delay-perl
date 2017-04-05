@@ -1,14 +1,23 @@
 # NAME
 
-resque::delay::perl - It's new $module
+Resque::Plugin::Delay - Delay the execution of job
 
 # SYNOPSIS
 
-    use resque::delay::perl;
+    use Resque;
+
+    my $working_time = time + 100;
+
+    my $resque = Resque->new(redis => $redis_server, plugins => ['Delay']);
+    $resque->push('test-job' => +{
+            class => 'Hoge',
+            args  => [+{ cat => 'nyaaaa', resque_working_time => $working_time }, +{ dog => 'bow' }]
+        }
+    );
 
 # DESCRIPTION
 
-resque::delay::perl is ...
+Passing epoch to the first element of payload makes it impossible to execute work until that time.
 
 # LICENSE
 
