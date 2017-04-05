@@ -4,9 +4,6 @@ use strict;
 use warnings;
 
 use Moose::Role;
-
-use Time::Moment;
-use Time::Strptime qw/strptime/;
 use JSON::XS qw/decode_json/;
 
 around pop => sub {
@@ -20,9 +17,10 @@ around pop => sub {
         queue   => $queue
     });
 
-    if (defined $payload->{args}->[0]->{delay_at}) {
-        my ($epoch,) = strptime('%Y-%m-%d %H:%M:%S', $payload->{args}->[0]->{delay_at});
-        if (Time::Moment->from_epoch($epoch) > Time::Moment->now) {
+    # "resque_working_time" is a redundant name but uses a name that is difficult to duplicate with the user defined key
+    if (defined $payload->{args}->[0]->{resque_working_time}) {
+        my ($epoch,) = $payload->{args}->[0]->{resque_working_time};
+        if ($epoch > time) {
             $self->push($queue, $job);
             return;
         }
