@@ -1,4 +1,4 @@
-name = "resque-delay-perl"
+name = "Resque-Plugin-Delay"
 # badges = ["travis"]
 authority="cpan:MERU"
 
