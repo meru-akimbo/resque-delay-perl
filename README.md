@@ -11,13 +11,14 @@ Resque::Plugin::Delay - Delay the execution of job
     my $resque = Resque->new(redis => $redis_server, plugins => ['Delay']);
     $resque->push('test-job' => +{
             class => 'Hoge',
-            args  => [+{ cat => 'nyaaaa', resque_working_time => $working_time }, +{ dog => 'bow' }]
+            args  => [+{ cat => 'nyaaaa' }, +{ dog => 'bow' }],
+            working_time => $working_time,
         }
     );
 
 # DESCRIPTION
 
-Passing epoch to the first element of payload makes it impossible to execute work until that time.
+Passing epoch to the working\_time attribute of payload makes it impossible to execute work until that time.
 
 # LICENSE
 
