@@ -8,6 +8,8 @@ our $VERSION = "0.01";
 use Resque::Plugin;
 
 add_to resque => 'Delay::Dequeue';
+add_to job    => 'Delay::Job';
+
 
 1;
 __END__
