@@ -17,9 +17,8 @@ around pop => sub {
         queue   => $queue
     });
 
-    # "resque_working_time" is a redundant name but uses a name that is difficult to duplicate with the user defined key
-    if (defined $payload->{args}->[0]->{resque_working_time}) {
-        my ($epoch,) = $payload->{args}->[0]->{resque_working_time};
+    if (defined $payload->{working_time}) {
+        my ($epoch,) = $payload->{working_time};
         if ($epoch > time) {
             $self->push($queue, $job);
             return;

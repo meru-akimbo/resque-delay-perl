@@ -24,7 +24,8 @@ my ($working_time)  = strptime('%Y-%m-%d %H:%M:%S', '2017-04-01 12:00:00');
 fixed_time($working_time - 1, sub {
     $resque->push('test-job' => +{
             class => 'hoge',
-            args => [+{ resque_working_time => $working_time }]
+            args => ['huga'],
+            working_time => $working_time,
         }
     );
     my $job = $resque->pop('test-job');
@@ -33,7 +34,7 @@ fixed_time($working_time - 1, sub {
 
 fixed_time($working_time, sub {
     my $job = $resque->pop('test-job');
-    is ref $job, 'Resque::Job', 'The time of work came';
+    isa_ok $job, 'Resque::Job', 'The time of work came';
 });
 
 done_testing;
