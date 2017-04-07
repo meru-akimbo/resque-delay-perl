@@ -16,7 +16,7 @@ __END__
 
 =encoding utf-8
 
-[![Build Status](https://travis-ci.org/meru-akimbo/resque-delay-perl.svg?branch=master)](https://travis-ci.org/meru-akimbo/resque-delay-perl)
+=for html <a href="https://travis-ci.org/meru-akimbo/resque-delay-perl"><img src="https://travis-ci.org/meru-akimbo/resque-delay-perl.svg?branch=master"></a>
 
 =head1 NAME
 
