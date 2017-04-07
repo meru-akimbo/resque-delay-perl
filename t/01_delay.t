@@ -6,7 +6,6 @@ use Resque;
 use Test::RedisServer;
 use Test::MockTime qw/set_fixed_time restore_time/;
 use Time::Strptime qw/strptime/;
-use Time::Moment;
 use Scope::Guard qw/scope_guard/;
 
 my $redis_server;
