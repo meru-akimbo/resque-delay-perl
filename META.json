@@ -45,15 +45,12 @@
             "JSON::XS" : "0",
             "Moose" : "0",
             "Resque" : "0",
-            "Time::Moment" : "0",
-            "Time::Strptime" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
             "Redis" : "0",
-            "Scope::Guard" : "0",
             "Test::MockTime" : "0",
             "Test::More" : "0.98",
             "Test::RedisServer" : "0"

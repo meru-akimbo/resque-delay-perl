@@ -1,8 +1,6 @@
 requires 'perl', '5.008001';
 requires 'Moose';
 requires 'Resque';
-requires 'Time::Moment';
-requires 'Time::Strptime';
 requires 'JSON::XS';
 
 on 'test' => sub {
@@ -10,6 +8,5 @@ on 'test' => sub {
     requires 'Test::RedisServer';
     requires 'Test::MockTime';
     requires 'Redis';
-    requires 'Scope::Guard';
 };
 
