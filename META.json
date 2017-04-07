@@ -53,7 +53,8 @@
             "Redis" : "0",
             "Test::MockTime" : "0",
             "Test::More" : "0.98",
-            "Test::RedisServer" : "0"
+            "Test::RedisServer" : "0",
+            "Time::Strptime" : "0"
          }
       }
    },
