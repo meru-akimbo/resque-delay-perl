@@ -19,20 +19,20 @@ my $redis = Redis->new($redis_server->connect_info);
 my $resque = Resque->new(redis => $redis, plugins => ['Delay']);
 isa_ok $resque->plugins->[0], 'Resque::Plugin::Delay';
 
-my ($working_time)  = strptime('%Y-%m-%d %H:%M:%S', '2017-04-01 12:00:00');
+my ($start_time)  = strptime('%Y-%m-%d %H:%M:%S', '2017-04-01 12:00:00');
 
-fixed_time($working_time - 1, sub {
+fixed_time($start_time - 1, sub {
     $resque->push('test-job' => +{
             class => 'hoge',
             args => ['huga'],
-            working_time => $working_time,
+            start_time => $start_time,
         }
     );
     my $job = $resque->pop('test-job');
     is $job, undef, 'The time of work has not arrived';
 });
 
-fixed_time($working_time, sub {
+fixed_time($start_time, sub {
     my $job = $resque->pop('test-job');
     isa_ok $job, 'Resque::Job', 'The time of work came';
 });

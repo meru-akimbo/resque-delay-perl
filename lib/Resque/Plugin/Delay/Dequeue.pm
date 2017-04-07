@@ -17,8 +17,8 @@ around pop => sub {
         queue   => $queue
     });
 
-    if (defined $payload->{working_time}) {
-        my ($epoch,) = $payload->{working_time};
+    if (defined $payload->{start_time}) {
+        my ($epoch,) = $payload->{start_time};
         if ($epoch > time) {
             $self->push($queue, $job);
             return;
