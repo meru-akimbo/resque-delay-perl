@@ -16,6 +16,8 @@ __END__
 
 =encoding utf-8
 
+[![Build Status](https://travis-ci.org/meru-akimbo/resque-delay-perl.svg?branch=master)](https://travis-ci.org/meru-akimbo/resque-delay-perl)
+
 =head1 NAME
 
 Resque::Plugin::Delay - Delay the execution of job

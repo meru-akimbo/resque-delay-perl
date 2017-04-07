@@ -1,3 +1,5 @@
+\[!\[Build Status\](https://travis-ci.org/meru-akimbo/resque-delay-perl.svg?branch=master)\](https://travis-ci.org/meru-akimbo/resque-delay-perl)
+
 # NAME
 
 Resque::Plugin::Delay - Delay the execution of job
