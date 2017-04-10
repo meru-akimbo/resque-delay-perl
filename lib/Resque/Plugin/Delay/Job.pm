@@ -7,7 +7,6 @@ use Moose::Role;
 
 has start_time  => (
     is       => 'rw',
-    default  => sub { time },
 );
 
 has payload => (
