@@ -28,3 +28,6 @@ cover_db/
 MYMETA.*
 
 /resque-delay-perl-*
+
+cpanfile.snapshot
+

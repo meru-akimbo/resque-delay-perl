@@ -1,6 +1,6 @@
 requires 'perl', '5.008001';
 requires 'Moose';
-requires 'Resque';
+requires 'Resque', '0.31';
 requires 'JSON::XS';
 
 on 'test' => sub {
