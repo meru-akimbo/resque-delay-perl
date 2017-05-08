@@ -70,7 +70,7 @@
          "web" : "https://github.com/meru-akimbo/resque-delay-perl"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:MERU",
    "x_serialization_backend" : "JSON::PP version 2.27300"
 }
