@@ -1550,20 +1550,20 @@ DISTRIBUTIONS
       Module::Build::Tiny 0.039
       Try::Tiny 0
       perl 5.006
-  Resque-0.27
-    pathname: D/DI/DIEGOK/Resque-0.27.tar.gz
+  Resque-0.31
+    pathname: D/DI/DIEGOK/Resque-0.31.tar.gz
     provides:
-      Resque 0.27
-      Resque::Encoder 0.27
-      Resque::Failure 0.27
-      Resque::Failure::Redis 0.27
-      Resque::Failures 0.27
-      Resque::Job 0.27
-      Resque::Pluggable 0.27
-      Resque::Plugin 0.27
-      Resque::Stat 0.27
-      Resque::Worker 0.27
-      Resque::WorkerClass 0.27
+      Resque 0.31
+      Resque::Encoder 0.31
+      Resque::Failure 0.31
+      Resque::Failure::Redis 0.31
+      Resque::Failures 0.31
+      Resque::Job 0.31
+      Resque::Pluggable 0.31
+      Resque::Plugin 0.31
+      Resque::Stat 0.31
+      Resque::Worker 0.31
+      Resque::WorkerClass 0.31
     requirements:
       Carp 0
       Class::Load 0
@@ -1607,14 +1607,6 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test::More 0
       perl 5.006
-  Scope-Guard-0.21
-    pathname: C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz
-    provides:
-      Scope::Guard 0.21
-    requirements:
-      ExtUtils::MakeMaker 0
-      Test::More 0
-      perl 5.006001
   Specio-0.36
     pathname: D/DR/DROLSKY/Specio-0.36.tar.gz
     provides:
@@ -1796,33 +1788,15 @@ DISTRIBUTIONS
       Test::Harness 3.38
     requirements:
       ExtUtils::MakeMaker 0
-  Test-Mock-Guard-0.10
-    pathname: X/XA/XAICRON/Test-Mock-Guard-0.10.tar.gz
+  Test-MockTime-0.15
+    pathname: D/DD/DDICK/Test-MockTime-0.15.tar.gz
     provides:
-      Test::Mock::Guard 0.10
+      Test::MockTime 0.15
     requirements:
-      CPAN::Meta 0
-      CPAN::Meta::Prereqs 0
-      Class::Load 0.06
-      Exporter 5.63
-      ExtUtils::CBuilder 0
-      ExtUtils::MakeMaker 6.59
-      Module::Build 0.38
-      Test::More 0.96
-      perl 5.008001
-  Test-Number-Delta-1.06
-    pathname: D/DA/DAGOLDEN/Test-Number-Delta-1.06.tar.gz
-    provides:
-      Test::Number::Delta 1.06
-    requirements:
-      Carp 0
-      Exporter 0
-      ExtUtils::MakeMaker 6.17
-      Test::Builder 0
-      perl 5.006
-      strict 0
-      vars 0
-      warnings 0
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      Time::Local 0
+      Time::Piece 1.08
   Test-RedisServer-0.20
     pathname: S/SO/SONGMU/Test-RedisServer-0.20.tar.gz
     provides:
@@ -1833,15 +1807,6 @@ DISTRIBUTIONS
       Mouse 0
       Time::HiRes 0
       perl 5.008_001
-  Test-Requires-0.10
-    pathname: T/TO/TOKUHIROM/Test-Requires-0.10.tar.gz
-    provides:
-      Test::Requires 0.10
-    requirements:
-      ExtUtils::MakeMaker 6.64
-      Test::Builder::Module 0
-      Test::More 0.47
-      perl 5.006
   Test-SharedFork-0.35
     pathname: E/EX/EXODIST/Test-SharedFork-0.35.tar.gz
     provides:
@@ -1879,22 +1844,6 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       constant 0
       perl 5.00503
-  Time-Moment-0.41
-    pathname: C/CH/CHANSEN/Time-Moment-0.41.tar.gz
-    provides:
-      Time::Moment 0.41
-      Time::Moment::Adjusters 0.41
-    requirements:
-      Carp 0
-      ExtUtils::MakeMaker 6.59
-      ExtUtils::ParseXS 3.18
-      Test::Fatal 0.006
-      Test::More 0.88
-      Test::Number::Delta 1.06
-      Test::Requires 0
-      Time::HiRes 0
-      XSLoader 0.02
-      perl 5.008001
   Time-Strptime-1.00
     pathname: K/KA/KARUPA/Time-Strptime-1.00.tar.gz
     provides:

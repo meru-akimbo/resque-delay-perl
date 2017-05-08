@@ -44,7 +44,7 @@
          "requires" : {
             "JSON::XS" : "0",
             "Moose" : "0",
-            "Resque" : "0",
+            "Resque" : "0.31",
             "perl" : "5.008001"
          }
       },
