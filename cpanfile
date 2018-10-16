@@ -1,4 +1,3 @@
-requires 'perl', '5.008001';
 requires 'Moose';
 requires 'Resque', '0.31';
 requires 'JSON';
