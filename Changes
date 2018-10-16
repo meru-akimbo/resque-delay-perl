@@ -2,6 +2,10 @@ Revision history for Perl extension resque-delay-perl
 
 {{$NEXT}}
 
+0.04 2018-10-16T18:56:36Z
+    - no support 5.8
+    - change depend module to JSON
+
 0.03 2017-05-08T03:34:18Z
     - ignore cpanfile.snapshot
     - update dependency
